@@ -1,0 +1,12 @@
+after_success:
+- curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.6.0/commit_build_changes.sh"
+  | bash -s -- --branch "master" --commands "npm install && npm run build" --commit-message
+  "Update content from the \`dist\` directory [skip ci]"
+env:
+  global:
+    secure: e8VaHtInlOgJU6YHoBMcBw/M5gt/BDcvhDeOgJ9HbuvDiOe8xwa5JwKjCMriSfH0zAczjB4zklPOjhmqnKlnwBa7B73jSsgyYllfLrIM2sVaJYiAPrt/kELR5bFN53xZFpSjcn6GOC8Hrp1HyDhUxjDtyZdVacA3VQqGIKIrzQ8=
+git:
+  depth: 10
+language: node_js
+node_js:
+- '0.10'
