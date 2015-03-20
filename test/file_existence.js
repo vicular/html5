@@ -65,6 +65,9 @@ var expectedFilesInDistDir = [
             'js/vendor/jquery-' + pkg.devDependencies.jquery + '.min.js',
             'js/vendor/modernizr-2.8.3.min.js',
             'js/vendor/jquery.min.map',
+            'js/vendor/ZeroClipboard.min.js',
+            'js/vendor/ZeroClipboard.min.map',
+            'js/vendor/ZeroClipboard.swf',
 
     'robots.txt',
     'tile-wide.png',
